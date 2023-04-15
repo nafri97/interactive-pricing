@@ -1,0 +1,76 @@
+/* color palette from <https://github.com/vuejs/theme> */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+
+:root {
+  --vt-c-white: #ffffff;
+  --vt-c-white-soft: #f8f8f8;
+  --vt-c-white-mute: #f2f2f2;
+
+  --vt-c-black: #181818;
+  --vt-c-black-soft: #222222;
+  --vt-c-black-mute: #282828;
+
+  --vt-c-indigo: #2c3e50;
+
+  /* ### Primary */
+
+  --Soft-Cyan: hsl(174, 77%, 80%);
+  --Strong-Cyan: hsl(174, 86%, 45%);
+  --Light-Grayish-Red: hsl(14, 92%, 95%);
+  --Light-Red: hsl(15, 100%, 70%);
+  --Pale-Blue: hsl(226, 100%, 87%);
+  
+  /* ### Neutral */
+  
+  --White: hsl (0, 0%, 100%);
+  --Very-Pale-Blue: hsl(230, 100%, 99%);
+  --Pale-Blue: hsl(224, 65%, 95%);
+  --Light-Grayish-Blue: hsl(223, 50%, 87%);
+  --Grayish-Blue: hsl(225, 20%, 60%);
+  --Dark-Desaturated-Blue: hsl(227, 35%, 25%);
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-background: var(none);
+  --color-background-card: var(--Very-Pale-Blue);
+  --color-button: var(--Dark-Desaturated-Blue);
+
+  --color-heading: var(--vt-c-text-light-1);
+  --color-text: var(--Dark-Desaturated-Blue);
+  --color-text-soft: var(--Grayish-Blue);
+
+}
+
+/* dark-mode coming-soon */
+.dark-mode {
+  --color-background: var(--vt-c-indigo);
+  --color-background-card: var(--vt-c-indigo);
+  --color-button: var(--Light-Grayish-Blue);
+  --color-heading: var(--vt-c-text-light-1);
+  --color-text: var(---Light-Grayish-Blue);
+  --color-text-soft: var(--Pale-Blue);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color:var(--color-text);
+  background-image: url(./icons/bg-pattern.svg); 
+  background-repeat: no-repeat;
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6;
+  font-family: 'Manrope', sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
